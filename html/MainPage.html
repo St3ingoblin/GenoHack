@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<title>Test</title>
+<title>Hallo</title>
+<!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <input id="search" type="search" required>
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-           
-          </ul>
-        </div>
-      </nav>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<html>
+<meta charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 <body>
-   <div><img src="../media/world_map.jpg" width="80%"id="map"alt="Null"></div>
+  <nav>
+
+    <div class="nav-wrapper">
+      <a class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </li>
+        <li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+    <form class="col s6">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">date_range</i>
+        <input id="start" onfocus="(this.type='date')" onblur="(this.type='text')" class="datepicker"
+          placeholder="Abreisedatum">
+        <label for="start"></label>
+        <span class="helper-text" data-error="wrong"></span>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">date_range</i>
+        <input id="ende" onfocus="(this.type='date')" onblur="(this.type='text')" class="datepicker"
+          placeholder="Rückreise">
+        <label for="ende"></label>
+        <span class="helper-text" data-error="wrong"></span>
+      </div>
+    </form>
+  </div>
+  <p></p>
+  <div>
+    <img src="../media/world_map.jpg" width="80%" id="map">
+  </div>
+  <style>
+    #map {
+      align-content: center;
+      border-radius: 15px;
+      border-style: solid;
+      border-width: 1px
+  </style>
 </body>
-<style>
-#map{    
-    border-radius: 50;
-    border: 1px solid black
-}</style>
-<!--Wielang bist du weg-->
-<!--
-    Weltkugel mit Flags
--->
-<!--Informationstextfeld-->
 
-
-
+</html>
