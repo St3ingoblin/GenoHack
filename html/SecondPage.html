@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<title>Ab ins Ausland</title>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 350px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 350px;
+}
+
+</style>
+</head>
+<body>
+
+        <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+                    <ul class="right hide-on-med-and-down">
+                      <li>
+                          <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                          </div></li>
+                      <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                      <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                      <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+
+<h2>Das ist wichtig</h2>
+<p>Hallo ich bin ein Infotext</p>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'payments')" id="defaultOpen">Zahlungen</button>
+  <button class="tablinks" onclick="openTab(event, 'insurance')">Versicherung</button>
+  <button class="tablinks" onclick="openTab(event, 'funding')">Finanzierung</button>
+  <button class="tablinks" onclick="openTab(event, 'mandate')">Vollmacht</button>
+  <button class="tablinks" onclick="openTab(event, 'help')">Hilfe im Notfall</button>
+</div>
+
+<div id="payments" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="insurance" class="tabcontent">
+  <h3>Versicherung</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="funding" class="tabcontent">
+  <h3>Finanzierung</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="mandate" class="tabcontent">
+    <h3>Vollmacht</h3>
+    <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="help" class="tabcontent">
+    <h3>Hilfe im Notfall</h3>
+    <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div>
+    <p>
+        Frage nicht dabei? Frag deinen Bankberater!
+    </p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
