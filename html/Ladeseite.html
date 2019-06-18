@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>Übersicht</title>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta charset="utf-8">
+
+<body onload="countdown()">
+    <img id="img1" src="../media/loading-gif.gif" width="30%">
+</body>
+<style>
+    body {
+        background-image: url("background.jpg");
+        background-size: 100%
+    }
+
+    #img1 {
+        position: fixed;
+        top: 25%;
+        left: 35%}
+        #btn{
+            visibility: 'none'
+        }
+</style>
+
+<script>
+function countdown()
+{
+    window.setTimeout(function(){
+
+// Move to a new location or you can do something else
+window.location.href = "DerCheck.html";
+
+}, 1300);
+}</script>
