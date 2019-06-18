@@ -44,19 +44,43 @@
     <CENTER>
         <a class="waves-effect waves-light btn" id="button"><i class="material-icons">date_range</i> Beratungstermin
             vereinbaren</a>
-
         <a class="waves-effect waves-light btn" id="button">Ich benötige keinen Termin</a>
-        <a class="waves-effect waves-light btn" id="button2" href="Absicherung.html"
-            onclick="colorChangeButton2()">Zurück</a>
     </CENTER>
+    <center><a class="waves-effect waves-light btn" title="Hier erfolgt die Weiterleitung ins Online-Banking"
+            id="button"><i class="material-icons">security</i>Zum eBanking-Login</a></center>
+    <a class="waves-effect waves-light btn" id="buttonBack" href="Absicherung.html"
+        onclick="colorChangeButton2()">Zurück</a>
+
 </body>
 <style>
+    #buttonBack {
+        margin: -20px -50px;
+        margin-top: 20px;
+        position: relative;
+        bottom: 5%;
+        left: 5%;
+        background-color: #ff6a00;
+        position: fixed;
+    }
+
+    #button:hover {
+        border: 1px solid #888;
+        background-color: #ff6a00;
+        color: #575757
+    }
+
+    #text {
+        margin-top: 25%;
+        text-align: center;
+        color: #2382c8;
+    }
+
     #button {
         margin-left: 10px;
         margin-top: 20px;
         align-content: center;
         background-color: #ff6a00;
-        width: 400px;
+        width: 300px;
     }
 
     #button2 {
