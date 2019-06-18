@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<title>Zahlungsmittel</title>
+<title>Versicherung</title>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <meta charset="utf-8">
 
 <body>
-    <a href="home.html"><img src="logo.png" id="navbar"></a>
+    <a href="home.html"><img src="logo.png" id="navbar" ></a>
     <div id="check">
         <center>
-            <h4>Zahlungsmittel und Zahlungswege</h4>
+            <h4>Versicherungen und Absicherungen</h4>
         </center>
-        <text id="text">Was sind die gängigsten Zahlungsmittel im Ausland, was ist sicher, was kostet wenig, was ist
-            flexibel und einfach zu Handhaben? Hier findest du eine kurze Übersicht über verschiedene Methoden, auf
-            Reisen an das eigene Geld zu gelangen und es auszugeben.
-        </text><br>
-        <text id="text">Die Landeswährung in den USA ist der US-Dollar $. Mit Euro kommst du dort deshalb nicht so weit.
-            Wie du trotzdem zahlen kannst erfährst du jetzt:
-        </text>
 
     </div>
     <div class="row">
@@ -35,40 +28,7 @@
             <img src="logo.png.jpg" alt="4" onclick="myFunction(this);">
         </div>
     </div>
-    <div>
-        <center>
-            <h2>Kreditkarte</h2>
-        </center>
-        <p><h4 id="headline">Wie funktioniert die Kreditkarte?</h4><br>
-            Bei unserer Kreditkarte handelt es sich um eine ‚echte‘ Kreditkarte, bei der die Abrechnung ein mal im Monat
-            über dein Girokonto erfolgt. Das Kreditkartenlimit passen wir auf deine Bedürfnisse an.
 
-            Die Nutzung ist super einfach: Mit deiner Kreditkarte kannst du im Internet oder vor Ort im Geschäft
-            bezahlen. Am Geldautomaten kannt du Bargeld abheben. Wichtig ist, dass du deine PIN bereithältst. </p>
-        <p><a id="headline">Für was genau kann ich die Kreditkarte nutzen?</a><br>Hier sind ein paar Beispiele: <br><br>
-            <a id="headline">Kautionen hinterlegen</a><br>
-            Wenn du ein Auto mieten möchtest wird immer eine Kaution verlangt. Mit einer Kaution sichert sich der
-            Vermieter gegen Schäden ab. In der Regel brauchst du für die Kaution eine gültige Kreditkarte, auf der der
-            Geldbetrag geblockt oder abgebucht werden kann. <br><br>
-
-            <a id="headline">Bargeld abheben</a><br>
-            Bargeld kannst du mit deiner Kreditkarte an Automaten sowie einigen Geschäften abheben. Halte immer dein PIN
-            bereit. Wir empfehlen Dir höhere Beträge abzuheben, da die Geldautomatenbetreiber meistens Gebühren für die
-            Nutzung des Geldautomaten verlangen. Diese Gebühren können wir als Bank leider nicht bestimmen und fließen
-            zu 100% dem Betreiber des Geldautomaten zu. Wie hoch diese Gebühren sind wird dir im Rahmen des
-            Abhebeprozesses angezeigt. Sollten dir die Gebühren zu hoch sein, kannst du immer noch abbrechen.
-            Tipp: Oft lohnt es sich das Geld direkt in der Landeswährung abzuheben.
-
-            <br><br>
-            <a id="headline">Bargeldlos bezahlen</a><br>
-            Bezahle bequem mit deiner Kreditkarte in den Geschäften – so wie du es von deiner Girocard gewöhnt bist.
-            <br><br>
-
-            <a id="headline">Kontaktlos bezahlen.</a><br>
-            Sofern es die Kreditkarte unterstützt hast du die Möglichkeit auch kontaktlos zu zahlen. Dabei musst du bei
-            Beträgen bis 20€ keinen PIN eingeben. Einfach die Karte an das Lesegerät halten!
-        </p>
-    </div>
     <!-- The expanding image container -->
     <div class="container">
         <!-- Close the image -->
@@ -80,35 +40,13 @@
         <!-- Image text -->
         <div id="imgtext" style="color:black"></div>
     </div>
-    <center> <a class="waves-effect waves-light btn" id="button2" href="DerCheck.html"
+    <center> <a class="waves-effect waves-light btn" id="button2" href="Absicherung.html"
+            onclick="colorChangeButton2()">Zurück</a>
+        <a class="waves-effect waves-light btn" id="button2" href="DerCheck.html"
             onclick="colorChangeButton2()">Weiter</a>
     </center>
-    <a class="waves-effect waves-light btn" id="buttonBack" href="summary.html"
-        onclick="colorChangeButton2()">Zurück</a>
-
 </body>
 <style>
-    #text {
-        margin-top: 25%;
-        text-align: center;
-
-    }
-
-    #headline {
-        font-weight: bold
-        
-    }
-
-    #buttonBack {
-        margin: -20px -50px;
-        margin-top: 20px;
-        position: relative;
-        bottom: 5%;
-        left: 5%;
-        background-color: #ff6a00;
-        position: fixed;
-    }
-
     #button {
         margin-left: 10px;
         margin-top: 20px;
@@ -197,7 +135,7 @@
         // Use the same src in the expanded image as the image being clicked on from the grid
         expandImg.src = imgs.src;
         // Use the value of the alt attribute of the clickable image as text inside the expanded image
-        imgText.outerHTML = getText(imgs)
+        imgText.innerHTML = getText(imgs)
         // Show the container element (hidden with CSS)
         expandImg.parentElement.style.display = "block";
     }
