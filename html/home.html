@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<title>Home</title>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        #navbar {
+            background-color: #2382c8;
+        }
+
+        #text {
+            margin-top: 10%;
+            text-align: center;
+            color: #2382c8;
+        }
+
+        #image {
+            width: 100%;
+            padding: 1px;
+            -moz-border-radius: 35px;
+            border-radius: 35px;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #button {
+            margin: -20px -50px;
+            margin-top: 20px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            background-color: #ff6a00;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-wrapper">
+            <a href="MainPage.html" class="brand-logo">Home</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="input-field">
+                        <input id="search" type="search"
+                            onkeypress="openTabKey(event, document.getElementById('search').value, event.keyCode)"
+                            required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </li>
+                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="text">
+        <h1>Ab ins Ausland</h1>
+        <h3>Der Check für einen erfolgreichen Aufenthalt im Ausland</h3>
+    </div>
+
+
+    <a class="waves-effect waves-light btn" id="button">Los geht's!</a>
+
+
+    <img src="globe.png" id="image">
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
