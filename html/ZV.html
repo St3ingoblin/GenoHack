@@ -8,134 +8,183 @@
 
 <body onload="disableAll()" id="check">
     <a href="home.html"><img src="logo.png" id="navbar"></a>
-    <div id="kasterl">
-        <div>
-            <center>
-                <h4>Zahlungsmittel und Zahlungswege</h4>
-            </center>
-            <text id="text">Was sind die gängigsten Zahlungsmittel im Ausland, was ist sicher, was kostet wenig, was ist
-                flexibel und einfach zu Handhaben? Hier findest du eine kurze Übersicht über verschiedene Methoden, auf
-                Reisen an das eigene Geld zu gelangen und es auszugeben.
-            </text><br>
-            <text id="text">Die Landeswährung in den USA ist der US-Dollar $. Mit Euro kommst du dort deshalb nicht so
-                weit.
-                Wie du trotzdem zahlen kannst erfährst du jetzt:
-            </text>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
 
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="../media/KK.png" alt="1" onclick="myFunction(this);">
+
+        <div id="kasterl" style="background-color: white">
+            <div>
+                <center>
+                    <h4>Zahlungsmittel und Zahlungswege</h4>
+                </center>
+                <text id="text">Was sind die gängigsten Zahlungsmittel im Ausland, was ist sicher, was kostet wenig, was
+                    ist
+                    flexibel und einfach zu Handhaben? Hier findest du eine kurze Übersicht über verschiedene Methoden,
+                    auf
+                    Reisen an das eigene Geld zu gelangen und es auszugeben.
+                </text><br>
+                <text id="text">Die Landeswährung in den USA ist der US-Dollar $. Mit Euro kommst du dort deshalb nicht
+                    so
+                    weit.
+                    Wie du trotzdem zahlen kannst erfährst du jetzt:
+                </text>
+
             </div>
-            <div class="column">
-                <img src="../media/Bargeld.PNG" alt="d" onclick="myFunction(this);">
+            <div class="row">
+                <div class="column">
+                    <img src="../media/KK.png" alt="1" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../media/Bargeld.PNG" alt="d" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../media/Girocard.PNG" alt="z" onclick="myFunction(this);">
+
+                </div>
+                <div class="column">
+                    <img src="../media/Empfehlung.PNG" alt="q" onclick="myFunction(this);">
+                </div>
             </div>
-            <div class="column">
-                <img src="../media/Girocard.PNG" alt="z" onclick="myFunction(this);">
+            <!--Div für Kreditkarte-->
+            <div id="div1">
+                <center>
+                    <h2>Kreditkarte</h2>
+                </center>
+                <p>
+                    <a id="headline">Wie funktioniert die Kreditkarte?</a><br>
+                    Bei unserer Kreditkarte handelt es sich um eine ‚echte‘ Kreditkarte, bei der die Abrechnung ein mal
+                    im
+                    Monat
+                    über dein Girokonto erfolgt. Das Kreditkartenlimit passen wir auf deine Bedürfnisse an.
 
+                    Die Nutzung ist super einfach: Mit deiner Kreditkarte kannst du im Internet oder vor Ort im Geschäft
+                    bezahlen. Am Geldautomaten kannt du Bargeld abheben. Wichtig ist, dass du deine PIN bereithältst.
+                </p>
+                <p><a id="headline">Für was genau kann ich die Kreditkarte nutzen?</a><br>Hier sind ein paar Beispiele:
+                    <br><br>
+                    <a id="headline">Kautionen hinterlegen</a><br>
+                    Wenn du ein Auto mieten möchtest wird immer eine Kaution verlangt. Mit einer Kaution sichert sich
+                    der
+                    Vermieter gegen Schäden ab. In der Regel brauchst du für die Kaution eine gültige Kreditkarte, auf
+                    der
+                    der
+                    Geldbetrag geblockt oder abgebucht werden kann. <br><br>
+
+                    <a id="headline">Bargeld abheben</a><br>
+                    Bargeld kannst du mit deiner Kreditkarte an Automaten sowie einigen Geschäften abheben. Halte immer
+                    dein
+                    PIN
+                    bereit. Wir empfehlen Dir höhere Beträge abzuheben, da die Geldautomatenbetreiber meistens Gebühren
+                    für
+                    die
+                    Nutzung des Geldautomaten verlangen. Diese Gebühren können wir als Bank leider nicht bestimmen und
+                    fließen
+                    zu 100% dem Betreiber des Geldautomaten zu. Wie hoch diese Gebühren sind wird dir im Rahmen des
+                    Abhebeprozesses angezeigt. Sollten dir die Gebühren zu hoch sein, kannst du immer noch abbrechen.
+                    Tipp: Oft lohnt es sich das Geld direkt in der Landeswährung abzuheben.
+
+                    <br><br>
+                    <a id="headline">Bargeldlos bezahlen</a><br>
+                    Bezahle bequem mit deiner Kreditkarte in den Geschäften – so wie du es von deiner Girocard gewöhnt
+                    bist.
+                    <br><br>
+
+                    <a id="headline">Kontaktlos bezahlen.</a><br>
+                    Sofern es die Kreditkarte unterstützt hast du die Möglichkeit auch kontaktlos zu zahlen. Dabei musst
+                    du
+                    bei
+                    Beträgen bis 20€ keinen PIN eingeben. Einfach die Karte an das Lesegerät halten!
+                </p>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html" onclick="colorChangeButton1()">Hab
+                    ich schon</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich noch</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich nicht</a>
             </div>
-            <div class="column">
-                <img src="../media/Empfehlung.PNG" alt="q" onclick="myFunction(this);">
+
+            <div id="div2">
+                <center>
+                    <h2 id="h2">Bargeld</h2>
+                </center>
+                <p><a id="headline">Bargeld</a><br>
+                    Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel
+                    Bargeld
+                    mit
+                    Dir herum. Falls du es verlierst oder es geklaut wird ist es weg und du stehst blöd da. Informiere
+                    dich
+                    bei
+                    der Einfuhr über die Zoll-Bestimmungen beim Einführen von viel Bargeld.
+                </p>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html" onclick="colorChangeButton1()">Hab
+                    ich schon</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich noch</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich nicht</a>
             </div>
+            <div id="div3">
+                <center>
+                    <h2>Girocard</h2>
+                </center>
+                <p><a id="headline">Girocard</a><br>
+                    Im EU-Ausland kannst du oft auch mit deiner Girocard zahlen. Im nicht EU-Ausland klappt das leider
+                    nicht.
+                    Geld abheben funktioniert oft trotzdem – Achtung: es können zusätzliche Gebühren anfallen!
+
+
+
+                </p>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html" onclick="colorChangeButton1()">Hab
+                    ich schon</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich noch</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich nicht</a>
+            </div>
+            <div id="div4">
+                <center>
+                    <h2>Empfehlung</h2>
+                </center>
+                <p><a id="headline">Empfehlung</a><br>
+                    Empfehlung
+                    Und welches Zahlungsmittel soll ich jetzt nehmen? Hab am Besten von allem etwas dabei. Wir empfehlen
+                    dir
+                    dich mit Kreditkarte, Girocard und Bargeld auszustatten, damit du im Notfall immer eine Reserve
+                    hast.
+
+
+
+                </p>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html" onclick="colorChangeButton1()">Hab
+                    ich schon</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich noch</a>
+                <a class="waves-effect waves-light btn" id="button1" href="ZV.html"
+                    onclick="colorChangeButton1()">Benötige ich nicht</a>
+            </div>
+            <!-- The expanding image container -->
+            <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:0%">
+                <!-- Image text -->
+                <div id="imgtext" style="color:black"></div>
+            </div>
+            <br>
         </div>
-        <!--Div für Kreditkarte-->
-        <div id="div1">
-            <center>
-                <h2>Kreditkarte</h2>
-            </center>
-            <p>
-                <a id="headline">Wie funktioniert die Kreditkarte?</a><br>
-                Bei unserer Kreditkarte handelt es sich um eine ‚echte‘ Kreditkarte, bei der die Abrechnung ein mal im
-                Monat
-                über dein Girokonto erfolgt. Das Kreditkartenlimit passen wir auf deine Bedürfnisse an.
-
-                Die Nutzung ist super einfach: Mit deiner Kreditkarte kannst du im Internet oder vor Ort im Geschäft
-                bezahlen. Am Geldautomaten kannt du Bargeld abheben. Wichtig ist, dass du deine PIN bereithältst.
-            </p>
-            <p><a id="headline">Für was genau kann ich die Kreditkarte nutzen?</a><br>Hier sind ein paar Beispiele:
-                <br><br>
-                <a id="headline">Kautionen hinterlegen</a><br>
-                Wenn du ein Auto mieten möchtest wird immer eine Kaution verlangt. Mit einer Kaution sichert sich der
-                Vermieter gegen Schäden ab. In der Regel brauchst du für die Kaution eine gültige Kreditkarte, auf der
-                der
-                Geldbetrag geblockt oder abgebucht werden kann. <br><br>
-
-                <a id="headline">Bargeld abheben</a><br>
-                Bargeld kannst du mit deiner Kreditkarte an Automaten sowie einigen Geschäften abheben. Halte immer dein
-                PIN
-                bereit. Wir empfehlen Dir höhere Beträge abzuheben, da die Geldautomatenbetreiber meistens Gebühren für
-                die
-                Nutzung des Geldautomaten verlangen. Diese Gebühren können wir als Bank leider nicht bestimmen und
-                fließen
-                zu 100% dem Betreiber des Geldautomaten zu. Wie hoch diese Gebühren sind wird dir im Rahmen des
-                Abhebeprozesses angezeigt. Sollten dir die Gebühren zu hoch sein, kannst du immer noch abbrechen.
-                Tipp: Oft lohnt es sich das Geld direkt in der Landeswährung abzuheben.
-
-                <br><br>
-                <a id="headline">Bargeldlos bezahlen</a><br>
-                Bezahle bequem mit deiner Kreditkarte in den Geschäften – so wie du es von deiner Girocard gewöhnt bist.
-                <br><br>
-
-                <a id="headline">Kontaktlos bezahlen.</a><br>
-                Sofern es die Kreditkarte unterstützt hast du die Möglichkeit auch kontaktlos zu zahlen. Dabei musst du
-                bei
-                Beträgen bis 20€ keinen PIN eingeben. Einfach die Karte an das Lesegerät halten!
-            </p>
-        </div>
-
-        <div id="div2">
-            <center>
-                <h2 id="h2">Bargeld</h2>
-            </center>
-            <p><a id="headline">Bargeld</a><br>
-                Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel Bargeld
-                mit
-                Dir herum. Falls du es verlierst oder es geklaut wird ist es weg und du stehst blöd da. Informiere dich
-                bei
-                der Einfuhr über die Zoll-Bestimmungen beim Einführen von viel Bargeld.
-            </p>
-        </div>
-        <div id="div3">
-            <center>
-                <h2>Girocard</h2>
-            </center>
-            <p><a id="headline">Girocard</a><br>
-                Im EU-Ausland kannst du oft auch mit deiner Girocard zahlen. Im nicht EU-Ausland klappt das leider
-                nicht.
-                Geld abheben funktioniert oft trotzdem – Achtung: es können zusätzliche Gebühren anfallen!
-
-
-
-            </p>
-        </div>
-        <div id="div4">
-            <center>
-                <h2>Empfehlung</h2>
-            </center>
-            <p><a id="headline">Empfehlung</a><br>
-                Empfehlung
-                Und welches Zahlungsmittel soll ich jetzt nehmen? Hab am Besten von allem etwas dabei. Wir empfehlen dir
-                dich mit Kreditkarte, Girocard und Bargeld auszustatten, damit du im Notfall immer eine Reserve hast.
-
-
-
-            </p>
-        </div>
-        <!-- The expanding image container -->
-        <div class="container">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <!-- Expanded image -->
-            <img id="expandedImg" style="width:0%">
-            <!-- Image text -->
-            <div id="imgtext" style="color:black"></div>
-        </div>
-        <br>
-    </div>
+    </center>
     <br><br><br>
 
     <a class="waves-effect waves-light btn" id="buttonBack" href="summary.html"
         onclick="colorChangeButton2()">Zurück</a>
+
+    <a class="waves-effect waves-light btn" id="buttonForward" href="Absicherung.html"
+        onclick="colorChangeButton2()">Weiter</a>
 
 </body>
 <style>
@@ -143,6 +192,7 @@
         border-color: black;
         border-radius: 50px;
         border-style: double;
+        width: 95%;
     }
 
     #text {
@@ -226,6 +276,20 @@
         display: none;
     }
 
+    #buttonForward {
+        margin: -20px -50px;
+        margin-top: 20px;
+        position: relative;
+        bottom: 5%;
+        right: 5%;
+        background-color: #ff6a00;
+        position: fixed;
+    }
+
+    #button1 {
+        background-color: #ff6a00;
+    }
+
     /* Expanding image text */
     #imgtext {
         position: absolute;
@@ -244,6 +308,11 @@
         color: white;
         font-size: 35px;
         cursor: pointer;
+    }
+
+    body {
+        background-image: url("background.jpg");
+        background-size: 100%
     }
 </style>
 <script>
