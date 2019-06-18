@@ -5,96 +5,106 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <meta charset="utf-8">
 
-<body onload="disableAll()" id="check">
+<body onload="disableAll()" id="checked">
     <a href="home.html"><img src="logo.png" id="navbar"></a>
-    <div id="kasterl">
-        <div>
-            <center>
-                <h4>Versicherungen: Deine Absicherung im Ausland</h4>
-            </center>
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="../media/Haftpflicht.PNG" alt="1" onclick="myFunction(this);">
+    <center>
+        <div id="kasterl">
+            <div>
+                <center>
+                    <h4>Versicherungen: Deine Absicherung im Ausland</h4>
+                </center>
             </div>
-            <div class="column">
-                <img src="../media/Hausrat.PNG" alt="d" onclick="myFunction(this);">
+            <div class="row">
+                <div class="column">
+                    <img src="../media/Haftpflicht.PNG" alt="1" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../media/Hausrat.PNG" alt="d" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../media/ReiseKV.PNG" alt="z" onclick="myFunction(this);">
+
+                </div>
+                <div class="column">
+                    <img src="../media/Schadensfall.PNG" alt="q" onclick="myFunction(this);">
+                </div>
             </div>
-            <div class="column">
-                <img src="../media/ReiseKV.PNG" alt="z" onclick="myFunction(this);">
+            <!--Div für Kreditkarte-->
+            <div id="div1">
+                <center>
+                    <h2>Haftpflichtversicherung</h2>
+                </center>
+                <p>
+                    <a id="headline">Brauche ich eine Haftpflichtversicherung für meinen Auslandsaufenthalt?</a><br>
+                    Solange du bei deinen Eltern mitversichert bist, gilt das automatisch weiter – auch im Ausland!
+                    Wichtig
+                    ist hierbei die Meldeadresse.
+
+                    Eine Haftpflichtversicherung deckt Schäden ab, die du verursachst z.B. Beim Feiern fällt dir das
+                    Smartphone deines Kommolitonen auf den Boden – Das Display ist kaputt. Wenn du Haftpflichtversichert
+                    bist, trägst nicht du selbst den Schaden - deine Versicherung übernimmt die Kosten für Dich.
+
+                </p>
 
             </div>
-            <div class="column">
-                <img src="../media/Schadensfall.PNG" alt="q" onclick="myFunction(this);">
+
+            <div id="div2">
+                <center>
+                    <h2>Hausrat und Reisegepäck
+                    </h2>
+                </center>
+                <p><a id="headline">Brauche ich eine Hausrat- und Reisegepäckversicherung?</a><br>
+                    In deine Studentenwohnung wird eingebrochen. Dein Laptop wurde gestohlen. Dies wird durch deine
+                    Hausratversicherung abgedeckt. Bei einigen Verträgen bist du bei deinen Eltern mitversichert – prüfe
+                    dafür aber auf jeden Fall die Versicherungsverträge! Wir untertützen dich gerne dabei.
+
+                    Während dem Flug geht dein Gepäckstück verloren. Diesen Schaden deckt eine Reisegepäckversicherung
+                    ab.
+
+                </p>
             </div>
+            <div id="div3">
+                <center>
+                    <h2>Reisekrankenversicherung
+                    </h2>
+                </center>
+                <p><a id="headline">Was ist wenn ich im Ausland krank werde oder einen Unfall habe?</a><br>
+                    Im Ausland bist du nicht oder nur teilweise über deine deutsche Krankenversicherung abgesichert. Oft
+                    fallen hohe Gebühren an, die du selbst bezahlen müsstest. Deshalb empfehlen wir unbedingt eine
+                    Auslandskrankenversicherung abzuschließen. Mach am Besten gleich einen Termin bei uns wir beraten
+                    sich
+                    sehr gerne!
+
+                </p>
+            </div>
+            <div id="div4">
+                <center>
+                    <h2>Verhalten im Schadensfall</h2>
+                </center>
+                <p><a id="headline">Was muss ich im Schadensfall tun?</a><br>
+                    Hierzu kannst du mit deiner Versicherung Kontakt aufnehmen, diese kann dir weitere Informationen
+                    geben.
+                    Die Schadensabwicklung kannst du direkt im OnlineBanking erledigen, sofern du die Versicherung bei
+                    uns
+                    abgeschlossen hast.
+
+
+
+
+                </p>
+            </div>
+            <!-- The expanding image container -->
+            <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:0%">
+                <!-- Image text -->
+                <div id="imgtext" style="color:black"></div>
+            </div>
+            <br>
         </div>
-        <!--Div für Kreditkarte-->
-        <div id="div1">
-            <center>
-                <h2>Haftpflichtversicherung</h2>
-            </center>
-            <p>
-                <a id="headline">Brauche ich eine Haftpflichtversicherung für meinen Auslandsaufenthalt?</a><br>
-                Solange du bei deinen Eltern mitversichert bist, gilt das automatisch weiter – auch im Ausland! Wichtig
-                ist hierbei die Meldeadresse.
-
-                Eine Haftpflichtversicherung deckt Schäden ab, die du verursachst z.B. Beim Feiern fällt dir das
-                Smartphone deines Kommolitonen auf den Boden – Das Display ist kaputt. Wenn du Haftpflichtversichert
-                bist, trägst nicht du selbst den Schaden - deine Versicherung übernimmt die Kosten für Dich.
-
-            </p>
-            
-        </div>
-
-        <div id="div2">
-            <center>
-                <h2>Bargeld</h2>
-            </center>
-            <p><a id="headline">Bargeld</a><br>
-                Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel Bargeld
-                mit
-                Dir herum. Falls du es verlierst oder es geklaut wird ist es weg und du stehst blöd da. Informiere dich
-                bei
-                der Einfuhr über die Zoll-Bestimmungen beim Einführen von viel Bargeld.
-            </p>
-        </div>
-        <div id="div3">
-            <center>
-                <h2>Girocard</h2>
-            </center>
-            <p><a id="headline">Girocard</a><br>
-                Im EU-Ausland kannst du oft auch mit deiner Girocard zahlen. Im nicht EU-Ausland klappt das leider
-                nicht.
-                Geld abheben funktioniert oft trotzdem – Achtung: es können zusätzliche Gebühren anfallen!
-
-
-
-            </p>
-        </div>
-        <div id="div4">
-            <center>
-                <h2>Empfehlung</h2>
-            </center>
-            <p><a id="headline">Empfehlung</a><br>
-                Empfehlung
-                Und welches Zahlungsmittel soll ich jetzt nehmen? Hab am Besten von allem etwas dabei. Wir empfehlen dir
-                dich mit Kreditkarte, Girocard und Bargeld auszustatten, damit du im Notfall immer eine Reserve hast.
-
-
-
-            </p>
-        </div>
-        <!-- The expanding image container -->
-        <div class="container">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <!-- Expanded image -->
-            <img id="expandedImg" style="width:0%">
-            <!-- Image text -->
-            <div id="imgtext" style="color:black"></div>
-        </div>
-        <br>
-    </div>
+    </center>
     <br><br><br>
 
     <a class="waves-effect waves-light btn" id="buttonBack" href="summary.html"
@@ -106,6 +116,7 @@
         border-color: black;
         border-radius: 50px;
         border-style: double;
+        width: 95%;
     }
 
     #text {
