@@ -11,15 +11,15 @@
 
     <style>
         #navbar {
-            background-color: #2382c8;
-        }
-
-        #logo{
-            margin-left: 10px;
+            left: 20%;
+            top: 5%;
+            position: fixed;
+            width: 300px;
+            height: 60px;
         }
 
         #text {
-            margin-top: 10%;
+            margin-top: 25%;
             text-align: center;
             color: #2382c8;
         }
@@ -36,7 +36,8 @@
             margin-right: auto;
         }
 
-        #button {
+        #button1,
+        #button2 {
             margin: -20px -50px;
             margin-top: 20px;
             position: relative;
@@ -44,31 +45,36 @@
             left: 50%;
             background-color: #ff6a00;
         }
+
+        #buttonBack {
+            margin: -20px -50px;
+            margin-top: 20px;
+            position: relative;
+            bottom: 5%;
+            left: 5%;
+            background-color: #ff6a00;
+            position: fixed;
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="home.html" id="logo" class="brand-logo" id="logo">Home</a>
-            <ul class="right hide-on-med-and-down">
-                <li id="user"><i class="material-icons">verified_user</i></li>
-                <li id="user">User123</li>
-            </ul>
-        </div>
-    </nav>
+    <img src="logo.png" id="navbar">
 
     <div id="text">
-        <h1>Ab ins Ausland</h1>
-        <h3>Der Check für einen erfolgreichen Aufenthalt im Ausland</h3>
+        <h1>Wohin geht es?</h1>
+        <h5>Wähle aus der Liste aus. Mehrauswahl möglich</h3>
     </div>
 
+    <a class="waves-effect waves-light btn" id="button1" href="destination.html" onclick="colorChangeButton1()">bis 6
+        Wochen</a>
+    <p></p>
+    <a class="waves-effect waves-light btn" id="button2" href="destination.html" onclick="colorChangeButton2()">mehr als
+        6 Wochen</a>
 
-    <a class="waves-effect waves-light btn" id="button" href="durantion.html">Los geht's!</a>
 
-
-    <img src="globe.png" id="image">
-
+    <a class="waves-effect waves-light btn" id="buttonBack" href="duration.html"
+        onclick="colorChangeButton2()">Zurück</a>
 
     <script>
 
