@@ -6,42 +6,49 @@
 <meta charset="utf-8">
 
 <body>
+    <a href="home.html"><img src="logo.png" id="navbar"></a>
     <div id="check">
         <h2>
             Checkliste:
         </h2>
-        <table id="Hallo" class="table_main" width="400" align="center" border="0" cellspacing="0" cellpadding="0">
-            <tr id="checked" style="color: #A0509A">
-                <td><i class=material-icons>check</i></td>
-                <td>Ziel</td>
-            </tr>
-            <tr id="checked" style="color: #A0509A">
-                <td><i class=material-icons>check</i></td>
-                <td id="checked">Finanzierung der Reise</td>
-            </tr>
+        <center>
+            <table id="Hallo" class="table_main" width="400" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr id="checked" style="color: #A0509A">
+                    <td><i class=material-icons>check</i></td>
+                    <td>Ziel</td>
+                </tr>
+                <tr id="checked" style="color: #A0509A">
+                    <td><i class=material-icons>check</i></td>
+                    <td id="checked">Finanzierung der Reise</td>
+                </tr>
 
-            <tr id="checked" style="color: #A0509A">
-                <td><i class=material-icons>check</i></td>
-                <td>Kreditkarte</td>
-            </tr>
-            <tr id="checked" style="color: #A0509A">
-                <td><i class=material-icons>check</i></td>
-                <td>Gebühreninformation</td>
-            </tr>
-            <tr id="clear" style="color: #87D0EA">
-                <td><i class=material-icons>clear</i></td>
-                <td>Haftpflichtversicherung</td>
-            </tr>
-            <tr id="checked" style="color: #A0509A">
-                <td><i class=material-icons>check</i></td>
-                <td>Krankenversicherung</td>
-            </tr>
-        </table>
+                <tr id="checked" style="color: #A0509A">
+                    <td><i class=material-icons>check</i></td>
+                    <td>Kreditkarte</td>
+                </tr>
+                <tr id="checked" style="color: #A0509A">
+                    <td><i class=material-icons>check</i></td>
+                    <td>Gebühreninformation</td>
+                </tr>
+                <tr id="clear" style="color: #87D0EA">
+                    <td><i class=material-icons>clear</i></td>
+                    <td>Haftpflichtversicherung</td>
+                </tr>
+                <tr id="checked" style="color: #A0509A">
+                    <td><i class=material-icons>check</i></td>
+                    <td>Krankenversicherung</td>
+                </tr>
+            </table>
+        </center>
     </div>
-    <a class="waves-effect waves-light btn" id="button"><i class="material-icons">date_range</i> Beratungstermin
-        vereinbaren</a>
+    <CENTER>
+        <a class="waves-effect waves-light btn" id="button"><i class="material-icons">date_range</i> Beratungstermin
+            vereinbaren</a>
 
-    <a class="waves-effect waves-light btn" id="button">Ich benötige keinen Termin</a>
+        <a class="waves-effect waves-light btn" id="button">Ich benötige keinen Termin</a>
+        <a class="waves-effect waves-light btn" id="button2" href="Absicherung.html"
+            onclick="colorChangeButton2()">Zurück</a>
+    </CENTER>
 </body>
 <style>
     #button {
@@ -52,6 +59,15 @@
         width: 400px;
     }
 
+    #button2 {
+        margin-left: 10px;
+        margin-top: 20px;
+        align-content: center;
+        background-color: #ff6a00;
+        width: 200px;
+    }
+
+
     #logo {
         margin-left: 10px
     }
@@ -61,7 +77,9 @@
     }
 
     #check {
-        margin-left: 10px
+        margin-left: 10px;
+        margin-top: 120px;
+
     }
 
     .table_main td {
@@ -112,5 +130,13 @@
 
     .bottom .right {
         border-right: none !important;
+    }
+
+    #navbar {
+        width: 300px;
+        height: 60px;
+        left: 20%;
+        top: 5%;
+        position: fixed;
     }
 </style>
