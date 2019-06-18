@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 
 <body>
+    <div id="h2"></div>
     <a href="home.html"><img src="logo.png" id="navbar"></a>
     <div id="check">
         <center>
@@ -38,7 +39,7 @@
     <!--Div für Kreditkarte-->
     <div id="div1">
         <center>
-            <h2>Kreditkarte</h2>
+            <h2 id="h2">Kreditkarte</h2>
         </center>
         <p>
             <h4 id="headline">Wie funktioniert die Kreditkarte?</h4><br>
@@ -75,7 +76,7 @@
 
     <div id="div2">
         <center>
-            <h2>Bargeld</h2>
+            <h2 id="h2">Bargeld</h2>
         </center>
         <p><a id="headline">Bargeld</a><br>
             Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel Bargeld mit
@@ -137,10 +138,6 @@
     #check {
         margin-left: 10px;
         margin-top: 120px;
-    }
-
-    #div1{
-        visibility: hidden
     }
     #div2{
         visibility: hidden
@@ -221,16 +218,22 @@
     }
     function myFunction(imgs)
     {
-        switch (imgs.alt) {
-            case "1":
-                document.getElementById("div1").style.visibility = "visible";
-                
-            case "d":
-                document.getElementById("div2").style.visibility="visible";
-            case "z":
-                
-            case "q":
-               
+        console.log(imgs.alt);
+        if(imgs.alt == '1')
+        {
+            document.getElementById("h2").innerHTML = "whatever";
+        }
+        if(imgs.alt == 'd')
+        {
+            document.getElementById("div1").innerHTML = "moin";
+        }
+        if(imgs.alt == 'z')
+        {
+            document.getElementById("h2").innerHTML = "whatever";
+        }
+        if(imgs.alt == 'q')
+        {
+            document.getElementById("h2").innerHTML = "whatever";
         }
     }
     function getText(imgs) {
