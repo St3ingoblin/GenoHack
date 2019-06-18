@@ -19,7 +19,7 @@
         }
 
         #text {
-            margin-top: 25%;
+            margin-top: 20%;
             text-align: center;
             color: #2382c8;
         }
@@ -38,12 +38,12 @@
 
         #button1,
         #button2 {
-            margin: -20px -50px;
+            margin-left: 10px;
             margin-top: 20px;
-            position: relative;
-            top: 50%;
-            left: 50%;
+            align-content: center;
             background-color: #ff6a00;
+            width: 400px;
+            left: 50%;
         }
 
         #buttonBack {
@@ -53,6 +53,23 @@
             bottom: 5%;
             left: 5%;
             background-color: #ff6a00;
+            position: fixed;
+        }
+
+        #buttonForward {
+            margin: -20px -50px;
+            margin-top: 20px;
+            position: relative;
+            bottom: 5%;
+            right: 5%;
+            background-color: #ff6a00;
+            position: fixed;
+        }
+
+        #list {
+            left: 48%;
+            width: 500px;
+            color: #2382c8;
             position: fixed;
         }
     </style>
@@ -66,15 +83,59 @@
         <h5>Wähle aus der Liste aus. Mehrauswahl möglich</h3>
     </div>
 
-    <a class="waves-effect waves-light btn" id="button1" href="destination.html" onclick="colorChangeButton1()">bis 6
-        Wochen</a>
-    <p></p>
-    <a class="waves-effect waves-light btn" id="button2" href="destination.html" onclick="colorChangeButton2()">mehr als
-        6 Wochen</a>
+    <div id="list">
+        <form action="#">
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>China</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>Belgien</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>Frankreich</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>Italien</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>Norwegen</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>Portugal</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>USA</span>
+                </label>
+            </p>
+        </form>
+    </div>
 
 
-    <a class="waves-effect waves-light btn" id="buttonBack" href="duration.html"
+    <a class="waves-effect waves-light btn" id="buttonBack" href="durantion.html"
         onclick="colorChangeButton2()">Zurück</a>
+
+    <a class="waves-effect waves-light btn" id="buttonForward" href="summary.html"
+        onclick="colorChangeButton2()">Weiter</a>
 
     <script>
 
