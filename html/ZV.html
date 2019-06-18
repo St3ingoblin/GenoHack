@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <meta charset="utf-8">
 
+
 <body onload="disableAll()" id="check">
     <a href="home.html"><img src="logo.png" id="navbar"></a>
     <div id="kasterl">
@@ -81,27 +82,62 @@
                 Beträgen bis 20€ keinen PIN eingeben. Einfach die Karte an das Lesegerät halten!
             </p>
         </div>
+    </div>
+    <!--Div für Kreditkarte-->
+    <div id="div1">
+        <center>
+            <h2 id="h2">Kreditkarte</h2>
+        </center>
+        <p>
+            <a id="headline">Wie funktioniert die Kreditkarte?</a><br>
+            Bei unserer Kreditkarte handelt es sich um eine ‚echte‘ Kreditkarte, bei der die Abrechnung ein mal im Monat
+            über dein Girokonto erfolgt. Das Kreditkartenlimit passen wir auf deine Bedürfnisse an.
 
-        <div id="div2">
-            <center>
-                <h2>Bargeld</h2>
-            </center>
-            <p><a id="headline">Bargeld</a><br>
-                Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel Bargeld
-                mit
-                Dir herum. Falls du es verlierst oder es geklaut wird ist es weg und du stehst blöd da. Informiere dich
-                bei
-                der Einfuhr über die Zoll-Bestimmungen beim Einführen von viel Bargeld.
-            </p>
-        </div>
-        <div id="div3">
-            <center>
-                <h2>Girocard</h2>
-            </center>
-            <p><a id="headline">Girocard</a><br>
-                Im EU-Ausland kannst du oft auch mit deiner Girocard zahlen. Im nicht EU-Ausland klappt das leider
-                nicht.
-                Geld abheben funktioniert oft trotzdem – Achtung: es können zusätzliche Gebühren anfallen!
+            Die Nutzung ist super einfach: Mit deiner Kreditkarte kannst du im Internet oder vor Ort im Geschäft
+            bezahlen. Am Geldautomaten kannt du Bargeld abheben. Wichtig ist, dass du deine PIN bereithältst.
+        </p>
+        <p><a id="headline">Für was genau kann ich die Kreditkarte nutzen?</a><br>Hier sind ein paar Beispiele: <br><br>
+            <a id="headline">Kautionen hinterlegen</a><br>
+            Wenn du ein Auto mieten möchtest wird immer eine Kaution verlangt. Mit einer Kaution sichert sich der
+            Vermieter gegen Schäden ab. In der Regel brauchst du für die Kaution eine gültige Kreditkarte, auf der der
+            Geldbetrag geblockt oder abgebucht werden kann. <br><br>
+
+            <a id="headline">Bargeld abheben</a><br>
+            Bargeld kannst du mit deiner Kreditkarte an Automaten sowie einigen Geschäften abheben. Halte immer dein PIN
+            bereit. Wir empfehlen Dir höhere Beträge abzuheben, da die Geldautomatenbetreiber meistens Gebühren für die
+            Nutzung des Geldautomaten verlangen. Diese Gebühren können wir als Bank leider nicht bestimmen und fließen
+            zu 100% dem Betreiber des Geldautomaten zu. Wie hoch diese Gebühren sind wird dir im Rahmen des
+            Abhebeprozesses angezeigt. Sollten dir die Gebühren zu hoch sein, kannst du immer noch abbrechen.
+            Tipp: Oft lohnt es sich das Geld direkt in der Landeswährung abzuheben.
+
+            <br><br>
+            <a id="headline">Bargeldlos bezahlen</a><br>
+            Bezahle bequem mit deiner Kreditkarte in den Geschäften – so wie du es von deiner Girocard gewöhnt bist.
+            <br><br>
+
+            <a id="headline">Kontaktlos bezahlen.</a><br>
+            Sofern es die Kreditkarte unterstützt hast du die Möglichkeit auch kontaktlos zu zahlen. Dabei musst du bei
+            Beträgen bis 20€ keinen PIN eingeben. Einfach die Karte an das Lesegerät halten!
+        </p>
+    </div>
+
+    <div id="div2">
+        <center>
+            <h2 id="h2">Bargeld</h2>
+        </center>
+        <p><a id="headline">Bargeld</a><br>
+            Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel Bargeld mit
+            Dir herum. Falls du es verlierst oder es geklaut wird ist es weg und du stehst blöd da. Informiere dich bei
+            der Einfuhr über die Zoll-Bestimmungen beim Einführen von viel Bargeld.
+        </p>
+    </div>
+    <div id="div3">
+        <center>
+            <h2>Girocard</h2>
+        </center>
+        <p><a id="headline">Girocard</a><br>
+            Im EU-Ausland kannst du oft auch mit deiner Girocard zahlen. Im nicht EU-Ausland klappt das leider nicht.
+            Geld abheben funktioniert oft trotzdem – Achtung: es können zusätzliche Gebühren anfallen!
 
 
 
@@ -186,9 +222,6 @@
     }
 
 
-
-
-
     #navbar {
         width: 300px;
         height: 60px;
@@ -262,6 +295,7 @@
         expandImg.parentElement.style.display = "block";
 
     }
+
     function myFunction(imgs) {
         disableAll();
         switch (imgs.alt) {
@@ -277,7 +311,6 @@
             case "q":
                 document.getElementById("div4").style.display = 'block';
                 break;
-
         }
     }
     function getText(imgs) {
