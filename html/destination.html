@@ -43,7 +43,7 @@
             align-content: center;
             background-color: #ff6a00;
             width: 400px;
-            left: 50%;
+            left: 29%
         }
 
         #buttonBack {
@@ -87,43 +87,43 @@
         <form action="#">
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkChina" onClick="checkBoxes()" checked />
                     <span>China</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkBelgien" onClick="checkBoxes()" />
                     <span>Belgien</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkFrankreich" onClick="checkBoxes()" />
                     <span>Frankreich</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkItalien" onClick="checkBoxes()" />
                     <span>Italien</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkNorwegen" onClick="checkBoxes()" />
                     <span>Norwegen</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkPortugal" onClick="checkBoxes()" />
                     <span>Portugal</span>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="checkbox" />
+                    <input name="group1" type="radio" id="checkUSA" onClick="checkBoxes()" />
                     <span>USA</span>
                 </label>
             </p>
@@ -138,7 +138,44 @@
         onclick="colorChangeButton2()">Weiter</a>
 
     <script>
+        function checkBoxes() {
+            console.log('TestLog');
 
+            // Get the checkbox
+            var checkBox = document.getElementById("checkChina");
+
+            console.log('China =' + checkBox.checked);
+            if (!checkBox.checked) {
+                checkBox = document.getElementById("checkBelgien");
+                document.getElementById('buttonForward').disabled = false;
+            }
+            if (!checkBox.checked) {
+                checkBox = document.getElementById("checkFrankreich");
+                document.getElementById('buttonForward').disabled = false;
+            }
+            if (!checkBox.checked) {
+                checkBox = document.getElementById("checkItalien");
+                document.getElementById('buttonForward').disabled = false;
+            }
+            if (!checkBox.checked) {
+                checkBox = document.getElementById("checkNorwegen");
+                document.getElementById('buttonForward').disabled = false;
+            }
+            if (!checkBox.checked) {
+                checkBox = document.getElementById("checkPortugal");
+                document.getElementById('buttonForward').disabled = false;
+            }
+            if (!checkBox.checked) {
+                checkBox = document.getElementById("checkUSA");
+                document.getElementById('buttonForward').disabled = false;
+            }
+            if (!checkBox.checked) {
+                console.log('Disable button now')
+                document.getElementById('buttonForward').disabled = true;
+                console.log('Button is ' + document.getElementById('buttonForward').disabled);
+            }
+
+        }
     </script>
 </body>
 
