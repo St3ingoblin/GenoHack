@@ -15,11 +15,106 @@
     </div>
 </nav>
 
+<body>
+    <div id="check">
+        <h2>
+            Checkliste:
+        </h2>
+
+        <table id="Hallo" class="table_main" width="400" align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><i class=material-icons>check</i></td>
+                <td>Ziel</td>
+            </tr>
+            <tr>
+                <td><i class=material-icons>check</i></td>
+                <td id="checked">Finanzierung der Reise</td>
+            </tr>
+
+            <tr>
+                <td><i class=material-icons>check</i></td>
+                <td>Kreditkarte</td>
+            </tr>
+            <tr>
+                <td><i class=material-icons>check</i></td>
+                <td>Gebühreninformation</td>
+            </tr>
+            <tr>
+                <td id=clear><i class=material-icons>clear</i></td>
+                <td id="clear">Haftpflichtversicherung</td>
+            </tr>
+            <tr>
+                <td><i class=material-icons>check</i></td>
+                <td>Krankenversicherung</td>
+            </tr>
+        </table>
+    </div>
+    <a class="waves-effect waves-light btn" id="button">Termin vereinbaren</a>
+</body>
 <style>
+    #button {
+            margin: -20px -50px;
+            margin-top: 20px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            background-color: #ff6a00;
+        }
     #logo {
         margin-left: 10px
     }
-    #user{
+
+    #user {
         margin-right: 10px
+    }
+
+    #check {
+        margin-left: 10px
+    }
+
+    .table_main td {
+        border-right: solid 1px #fff;
+        border-bottom: 1px solid #fff;
+        padding: 1px;
+        text-align: center;
+    }
+
+    #clear {
+        background: red
+    }
+
+    .left,
+    .bottom td {
+        background: #fff !important;
+    }
+
+    td {
+        font-weight: bold
+    }
+
+    .right,
+    .left {
+        border-right: 3px solid #d6d6d6 !important;
+    }
+
+    .top td {
+        border-top: 3px solid #d6d6d6;
+    }
+
+    .bottom td {
+        border-top: 3px solid #d6d6d6;
+    }
+
+    .bottom .left {
+        border-top: none;
+        border-right: none !important
+    }
+
+    .top .left {
+        border-top: none;
+    }
+
+    .bottom .right {
+        border-right: none !important;
     }
 </style>
