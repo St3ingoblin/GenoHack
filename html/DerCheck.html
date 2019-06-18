@@ -5,61 +5,53 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <meta charset="utf-8">
 
-<nav>
-    <div class="nav-wrapper">
-        <a href="home.html" id="logo" class="brand-logo" id="logo">Home</a>
-        <ul class="right hide-on-med-and-down">
-            <li id="user"><i class="material-icons">verified_user</i></li>
-            <li id="user">User123</li>
-        </ul>
-    </div>
-</nav>
-
 <body>
     <div id="check">
         <h2>
             Checkliste:
         </h2>
-
         <table id="Hallo" class="table_main" width="400" align="center" border="0" cellspacing="0" cellpadding="0">
-            <tr>
+            <tr id="checked" style="color: #A0509A">
                 <td><i class=material-icons>check</i></td>
                 <td>Ziel</td>
             </tr>
-            <tr>
+            <tr id="checked" style="color: #A0509A">
                 <td><i class=material-icons>check</i></td>
                 <td id="checked">Finanzierung der Reise</td>
             </tr>
 
-            <tr>
+            <tr id="checked" style="color: #A0509A">
                 <td><i class=material-icons>check</i></td>
                 <td>Kreditkarte</td>
             </tr>
-            <tr>
+            <tr id="checked" style="color: #A0509A">
                 <td><i class=material-icons>check</i></td>
                 <td>Gebühreninformation</td>
             </tr>
-            <tr>
-                <td id=clear><i class=material-icons>clear</i></td>
-                <td id="clear">Haftpflichtversicherung</td>
+            <tr id="clear" style="color: #87D0EA">
+                <td><i class=material-icons>clear</i></td>
+                <td>Haftpflichtversicherung</td>
             </tr>
-            <tr>
+            <tr id="checked" style="color: #A0509A">
                 <td><i class=material-icons>check</i></td>
                 <td>Krankenversicherung</td>
             </tr>
         </table>
     </div>
-    <a class="waves-effect waves-light btn" id="button">Termin vereinbaren</a>
+    <a class="waves-effect waves-light btn" id="button"><i class="material-icons">date_range</i> Beratungstermin
+        vereinbaren</a>
+
+    <a class="waves-effect waves-light btn" id="button">Ich benötige keinen Termin</a>
 </body>
 <style>
     #button {
-            margin: -20px -50px;
-            margin-top: 20px;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            background-color: #ff6a00;
-        }
+        margin-left: 10px;
+        margin-top: 20px;
+        align-content: center;
+        background-color: #ff6a00;
+        width: 400px;
+    }
+
     #logo {
         margin-left: 10px
     }
@@ -80,7 +72,11 @@
     }
 
     #clear {
-        background: red
+        background: #D10A45
+    }
+
+    #checked {
+        background: #8AC056
     }
 
     .left,
