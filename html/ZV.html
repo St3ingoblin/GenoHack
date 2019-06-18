@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <title>Zahlungsmittel</title>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -22,30 +22,32 @@
     </div>
     <div class="row">
         <div class="column">
-            <center><text>Kreditkarte</text></center>
             <img src="../media/KK.png" alt="1" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="globe.png" alt="2" onclick="myFunction(this);">
+            <img src="../media/Bargeld.PNG" alt="d" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="../media/world_map.jpg" alt="3" onclick="myFunction(this);">
+            <img src="../media/Girocard.PNG" alt="z" onclick="myFunction(this);">
 
         </div>
         <div class="column">
-            <img src="logo.png.jpg" alt="4" onclick="myFunction(this);">
+            <img src="logo.png.jpg" alt="q" onclick="myFunction(this);">
         </div>
     </div>
-    <div>
+    <!--Div für Kreditkarte-->
+    <div id="div1">
         <center>
             <h2>Kreditkarte</h2>
         </center>
-        <p><h4 id="headline">Wie funktioniert die Kreditkarte?</h4><br>
+        <p>
+            <h4 id="headline">Wie funktioniert die Kreditkarte?</h4><br>
             Bei unserer Kreditkarte handelt es sich um eine ‚echte‘ Kreditkarte, bei der die Abrechnung ein mal im Monat
             über dein Girokonto erfolgt. Das Kreditkartenlimit passen wir auf deine Bedürfnisse an.
 
             Die Nutzung ist super einfach: Mit deiner Kreditkarte kannst du im Internet oder vor Ort im Geschäft
-            bezahlen. Am Geldautomaten kannt du Bargeld abheben. Wichtig ist, dass du deine PIN bereithältst. </p>
+            bezahlen. Am Geldautomaten kannt du Bargeld abheben. Wichtig ist, dass du deine PIN bereithältst.
+        </p>
         <p><a id="headline">Für was genau kann ich die Kreditkarte nutzen?</a><br>Hier sind ein paar Beispiele: <br><br>
             <a id="headline">Kautionen hinterlegen</a><br>
             Wenn du ein Auto mieten möchtest wird immer eine Kaution verlangt. Mit einer Kaution sichert sich der
@@ -70,20 +72,27 @@
             Beträgen bis 20€ keinen PIN eingeben. Einfach die Karte an das Lesegerät halten!
         </p>
     </div>
+
+    <div id="div2">
+        <center>
+            <h2>Bargeld</h2>
+        </center>
+        <p><a id="headline">Bargeld</a><br>
+            Überall akzeptiert wird Bargeld in der entsprechenden Landeswährung. Trage aber nicht zu viel Bargeld mit
+            Dir herum. Falls du es verlierst oder es geklaut wird ist es weg und du stehst blöd da. Informiere dich bei
+            der Einfuhr über die Zoll-Bestimmungen beim Einführen von viel Bargeld.
+        </p>
+    </div>
     <!-- The expanding image container -->
     <div class="container">
         <!-- Close the image -->
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
         <!-- Expanded image -->
-        <img id="expandedImg" style="width:100%">
-
+        <img id="expandedImg" style="width:0%">
         <!-- Image text -->
         <div id="imgtext" style="color:black"></div>
     </div>
-    <center> <a class="waves-effect waves-light btn" id="button2" href="DerCheck.html"
-            onclick="colorChangeButton2()">Weiter</a>
-    </center>
+
     <a class="waves-effect waves-light btn" id="buttonBack" href="summary.html"
         onclick="colorChangeButton2()">Zurück</a>
 
@@ -97,7 +106,6 @@
 
     #headline {
         font-weight: bold
-        
     }
 
     #buttonBack {
@@ -129,6 +137,13 @@
     #check {
         margin-left: 10px;
         margin-top: 120px;
+    }
+
+    #div1{
+        visibility: hidden
+    }
+    #div2{
+        visibility: hidden
     }
 
     #navbar {
@@ -177,6 +192,7 @@
         left: 15px;
         color: white;
         font-size: 20px;
+        visibility: hidden;
     }
 
     /* Closable button inside the image */
@@ -190,7 +206,7 @@
     }
 </style>
 <script>
-    function myFunction(imgs) {
+    function xymyFunction(imgs) {
         // Get the expanded image
         var expandImg = document.getElementById("expandedImg");
         // Get the image text
@@ -198,20 +214,35 @@
         // Use the same src in the expanded image as the image being clicked on from the grid
         expandImg.src = imgs.src;
         // Use the value of the alt attribute of the clickable image as text inside the expanded image
-        imgText.outerHTML = getText(imgs)
+        imgText.outerHTML = getText(imgs);
         // Show the container element (hidden with CSS)
         expandImg.parentElement.style.display = "block";
+
+    }
+    function myFunction(imgs)
+    {
+        switch (imgs.alt) {
+            case "1":
+                document.getElementById("div1").style.visibility = "visible";
+                
+            case "d":
+                document.getElementById("div2").style.visibility="visible";
+            case "z":
+                
+            case "q":
+               
+        }
     }
     function getText(imgs) {
         switch (imgs.alt) {
             case "1":
-                return "Hallo";
+                document.getElementById("div1").style.visibility = "visible";
             case "2":
-                return '<a class="waves-effect waves-light btn" id="button2" href="DerCheck.html" \
-            onclick="colorChangeButton2()">Weiter</a>';
+                document.getElementById("div2").style.visibility="visible";
             case "3":
-                return "Wurst";
-            case "4": return "Test";
+                
+            case "4":
+               
         }
     }
-</script>
+</script> -->
