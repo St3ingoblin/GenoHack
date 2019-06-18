@@ -14,16 +14,17 @@
   <nav>
 
     <div class="nav-wrapper">
-      <a class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+      <a class="brand-logo" id="logo">Home</a>
       <ul class="right hide-on-med-and-down">
+        <li><i class="material-icons">airport_shuttle</i></li>
         <li>
           <div class="input-field">
             <input id="search" type="search" required>
             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-            <i class="material-icons">close</i>
+            <i class="material-icons" id="map">close</i>
           </div>
         </li>
-        <li>
+
       </ul>
     </div>
   </nav>
@@ -47,7 +48,7 @@
   </div>
   <p></p>
   <div>
-    <img src="../media/world_map.jpg" width="80%" id="map">
+    <img src="../media/world_map.jpg" width="100%" id="map">
   </div>
   <style>
     #map {
@@ -55,6 +56,11 @@
       border-radius: 15px;
       border-style: solid;
       border-width: 1px
+    }
+
+    #logo {
+      margin-left: 10px;
+    }
   </style>
 </body>
 
